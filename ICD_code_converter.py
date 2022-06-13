@@ -43,10 +43,13 @@ def clean_codes(codes):
                     num_length = str(num)
                     num_length = len(num_length)
                     print(num_length)
-                    if firstLast[0][1] == '0' and len(str(firstLast[0])) > 3:
-                        leadingZero2 = True
-                    else:
-                        leadingZero2 = False
+                    if firstLast[0][1] == '0':
+                        if len(str(firstLast[0])) > 3:
+                            leadingZero2 = True
+                            twoDigits = False
+                        else: 
+                            leadingZero2 = False
+                            twoDigits = True           
                 else:
                     leadingZero = False
                     leadingZero2 = False
@@ -83,6 +86,7 @@ def clean_codes(codes):
                     print(num_length)
                     if firstLast[0][1] == '0' and len(str(firstLast[0])) > 2:
                         leadingZero2 = True
+                        
                     else: leadingZero2 = False
                 else:
                     leadingZero = False
