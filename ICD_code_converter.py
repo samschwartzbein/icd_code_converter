@@ -111,7 +111,7 @@ def clean_codes(codes):
                         else:
                             ranges.append(str(i))
                     elif leadingZero:
-                        ranges.append(str(i[0] + '0' + str(i[1:])))
+                        ranges.append('0' + str(i))
                     else:
                         ranges.append(i)
                 leadingZero = False
