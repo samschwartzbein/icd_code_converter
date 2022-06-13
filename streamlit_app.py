@@ -1,14 +1,10 @@
 import streamlit as st
 from pydantic import BaseModel
 import streamlit_pydantic as sp
-
 from ICD_code_converter import *
 
 class ExampleModel(BaseModel):
     Enter_Your_Codes: str
-    #some_boolean: bool
-
-# Enter Functions Here
 
 def main():
     """ICD Converter App"""
