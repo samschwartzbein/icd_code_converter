@@ -58,12 +58,10 @@ def clean_codes(codes):
                 temp_range = list_code_range(start, end, letter)
                 for i in temp_range:
                     i_length = len(str(i)) - 1  # -1 to account for leading character (ie. A)
-                    st.code(i)
                     if twoDigits:
                         single_digits = [i for i in range(0,10)]
                         int_i = int(i[1:])
                         if int_i in single_digits:
-                            st.code(i)
                             ranges.append(str(i[0] + '0' + str(i[1:])))
                         else:
                             ranges.append(str(i))
