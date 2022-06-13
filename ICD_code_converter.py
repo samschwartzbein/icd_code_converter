@@ -114,14 +114,14 @@ def clean_codes(codes):
 
 def print_codes(clean_codes):
     to_print = ["("]
-    for i in range(len(cleaned)):
+    for i in range(len(clean_codes)):
         if i % 10 != 0:
-            to_print.append('"' + cleaned[i] + '",')
+            to_print.append('"' + clean_codes[i] + '",')
         if i % 10 == 0:
             print(*to_print)
             to_print = []
-            to_print.append('"' + cleaned[i] + '",')
-        if i == len(cleaned) - 1:
+            to_print.append('"' + clean_codes[i] + '",')
+        if i == len(clean_codes) - 1:
             to_print[-1] = to_print[-1].replace(",", "")
             print(*to_print)
             print(");")
