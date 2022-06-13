@@ -60,6 +60,7 @@ def clean_codes(codes):
                     i_length = len(str(i)) - 1  # -1 to account for leading character (ie. A)
                     if twoDigits:
                         if i in range(0,10):
+                            print(i)
                             ranges.append(str(i[0] + '0' + str(i[1:])))
                         else:
                             ranges.append(str(i))
