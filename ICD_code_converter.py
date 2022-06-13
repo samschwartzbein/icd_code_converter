@@ -124,6 +124,6 @@ def print_codes(clean_codes):
         if i == len(clean_codes) - 1:
             to_print[-1] = to_print[-1].replace(",", "")
             final = ' '.join([str(item) for item in to_print])
-            st.code(final + ");")
+            st.code(final + "/n );")
             st.code(");")
     return
