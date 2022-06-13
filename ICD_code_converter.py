@@ -119,11 +119,11 @@ def print_codes(clean_codes):
         if i % 10 != 0:
             to_print.append('"' + clean_codes[i] + '",')
         if i % 10 == 0:
-            st.code(*to_print)
+            st.code(to_print)
             to_print = []
             to_print.append('"' + clean_codes[i] + '",')
         if i == len(clean_codes) - 1:
             to_print[-1] = to_print[-1].replace(",", "")
-            st.code(*to_print)
+            st.code(to_print)
             st.code(");")
     return
