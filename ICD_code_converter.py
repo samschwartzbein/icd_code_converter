@@ -125,5 +125,6 @@ def print_codes(clean_codes):
             to_print[-1] = to_print[-1].replace(",", "")
             codes = ' '.join([str(item) for item in to_print])
             close = "/n );"
-            final_string = [codes, close]
-    return "".join(final_string)
+            final_list = [codes, close]
+            final_string = "".join(final_list)
+    return final_string
