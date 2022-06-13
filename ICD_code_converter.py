@@ -123,7 +123,5 @@ def print_codes(clean_codes):
             to_print.append('"' + clean_codes[i] + '",')
         if i == len(clean_codes) - 1:
             to_print[-1] = to_print[-1].replace(",", "")
-            final = ' '.join([str(item) for item in to_print])
-            st.code(final + "/n );")
-            st.code(");")
-    return
+            final = ' '.join([str(item) for item in to_print])           
+    return final + "/n );"
