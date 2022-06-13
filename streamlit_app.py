@@ -15,7 +15,7 @@ def main():
     if data:
         userInput = data.Enter_Your_Codes
         cleaned = clean_codes(userInput)
-        final = to_print(cleaned)
+        final = print_codes(cleaned)
         st.code(final)
     pass
 
