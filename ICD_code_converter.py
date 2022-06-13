@@ -58,7 +58,12 @@ def clean_codes(codes):
                 temp_range = list_code_range(start, end, letter)
                 for i in temp_range:
                     i_length = len(str(i)) - 1  # -1 to account for leading character (ie. A)
-                    if leadingZero and leadingZero2:
+                    if twoDigits:
+                        if i in range(0,10):
+                            ranges.append(str(i[0] + '0' + str(i[1:])))
+                        else:
+                            ranges.append(str(i))
+                    elif leadingZero and leadingZero2:
                         if i_length == num_length:
                             ranges.append(str(i[0] + '0' + '0' + str(i[1:])))
                         elif i_length == num_length + 1:
