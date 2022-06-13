@@ -59,7 +59,7 @@ def clean_codes(codes):
                 for i in temp_range:
                     i_length = len(str(i)) - 1  # -1 to account for leading character (ie. A)
                     if twoDigits:
-                        if i in range(0,10):
+                        if i[1:] in range(0,10):
                             print(i)
                             ranges.append(str(i[0] + '0' + str(i[1:])))
                         else:
