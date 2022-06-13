@@ -126,11 +126,3 @@ def print_codes(clean_codes):
             print(*to_print)
             print(");")
     return
-
-
-codes = input("Enter your codes: ")
-print('-' * 120)
-print("Output:")
-print('\n')
-cleaned = clean_codes(codes)
-print_codes(cleaned)
