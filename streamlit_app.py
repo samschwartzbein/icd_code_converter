@@ -9,7 +9,7 @@ class ExampleModel(BaseModel):
 def main():
     """ICD Converter App"""
     st.title("ICD Code to SAS Converter")
-    st.markdown("###### This application will transform ICD codes into a SAS readable format")
+    st.markdown("###### This application transforms ICD codes into a SAS readable format")
     data = sp.pydantic_form(key="my_form", model=ExampleModel)
 
     if data:
