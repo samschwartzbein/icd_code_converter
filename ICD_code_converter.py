@@ -23,7 +23,6 @@ def clean_codes(codes):
     codes = codes.replace("Procedures:", "")
     codes = codes.replace("Procedure:", "")
     codes = codes.replace("Diagnosis:", "")
-    codes = codes.replace(" ", "")
     clean_codes = codes.replace("X", "")
     output = ' '.join('"{}",'.format(word) for word in clean_codes.split(' '))
 
@@ -119,7 +118,7 @@ def clean_codes(codes):
                 leadingZero = False
                 leadingZero2 = False
 
-        code_list = re.sub("[^\w]", " ", output).split()
+    code_list = re.sub("[^\w]", " ", output).split()
     for i in ranges:
         i = i.replace('"', "")
         code_list.append(i)
