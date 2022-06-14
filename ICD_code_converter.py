@@ -118,7 +118,7 @@ def clean_codes(codes):
                 leadingZero = False
                 leadingZero2 = False
 
-    code_list = re.sub("[^\w]", " ", output).split()
+        code_list = re.sub("[^\w]", " ", output).split()
     for i in ranges:
         i = i.replace('"', "")
         code_list.append(i)
