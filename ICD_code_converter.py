@@ -23,6 +23,7 @@ def clean_codes(codes):
     codes = codes.replace("Procedures:", "")
     codes = codes.replace("Procedure:", "")
     codes = codes.replace("Diagnosis:", "")
+    codes = codes.replace(" ", "")
     clean_codes = codes.replace("X", "")
     output = ' '.join('"{}",'.format(word) for word in clean_codes.split(' '))
 
