@@ -1,4 +1,5 @@
 import streamlit as st
+import pydantic
 from pydantic import BaseModel
 import streamlit_pydantic as sp
 from ICD_code_converter import *
@@ -19,5 +20,5 @@ def main():
         st.code(final)
     pass
 
-
+print(pydantic.__version__)
 main()
