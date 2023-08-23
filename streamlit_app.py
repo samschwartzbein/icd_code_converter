@@ -1,8 +1,6 @@
 import streamlit as st
 import pydantic
 from pydantic import BaseModel
-st.write(pydantic.__version__)
-st.write("hello")
 import streamlit_pydantic as sp
 from ICD_code_converter import *
 
