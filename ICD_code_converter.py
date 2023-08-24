@@ -23,8 +23,7 @@ def clean_codes(codes):
     codes = codes.replace("Procedures:", "")
     codes = codes.replace("Procedure:", "")
     codes = codes.replace("Diagnosis:", "")
-    clean_codes = codes.replace("X", "")
-    output = ' '.join('"{}",'.format(word) for word in clean_codes.split(' '))
+    output = ' '.join('"{}",'.format(word) for word in codes.split(' '))
 
     for code in output.split():
         if '-' in code:
